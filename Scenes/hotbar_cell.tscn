@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://bamunhg312pbu"]
+
+[ext_resource type="Texture2D" uid="uid://caex2omr7bt4d" path="res://Sprites/hotbar_cell.png" id="1_eap4n"]
+[ext_resource type="Script" path="res://Scenes/HotbarCell.cs" id="2_av5w4"]
+[ext_resource type="FontFile" uid="uid://fag2oxixv12a" path="res://Silkscreen-Regular.ttf" id="2_uxrug"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_etc7s"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_d63nh"]
+font = ExtResource("2_uxrug")
+font_size = 5
+
+[node name="HotbarCell" type="Button"]
+anchors_preset = -1
+offset_right = 24.0
+offset_bottom = 24.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_etc7s")
+icon = ExtResource("1_eap4n")
+flat = true
+icon_alignment = 1
+script = ExtResource("2_av5w4")
+
+[node name="Sprite" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 20.0
+offset_bottom = 20.0
+
+[node name="Amount" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -2.0
+grow_horizontal = 0
+grow_vertical = 0
+label_settings = SubResource("LabelSettings_d63nh")

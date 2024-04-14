@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://dxivbrveskqeb"]
+
+[ext_resource type="Texture2D" uid="uid://dbxcklkikr41w" path="res://Sprites/pine_log.png" id="1_pcwh5"]
+[ext_resource type="Script" path="res://Scripts/ItemResource.cs" id="2_6ltb2"]
+
+[resource]
+script = ExtResource("2_6ltb2")
+Name = "Pine Log"
+StackSize = 99
+Sprite = ExtResource("1_pcwh5")

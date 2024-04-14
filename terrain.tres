@@ -1,9 +1,9 @@
 [gd_resource type="TileSet" load_steps=3 format=3 uid="uid://dxnpixim4gxmt"]
 
-[ext_resource type="Texture2D" uid="uid://dx4aobkuqan1w" path="res://tilemap.png" id="1_1ndpu"]
+[ext_resource type="Texture2D" uid="uid://dx4aobkuqan1w" path="res://Sprites/tilemap.png" id="1_a2ewr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lomje"]
-texture = ExtResource("1_1ndpu")
+texture = ExtResource("1_a2ewr")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0

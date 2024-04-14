@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://vnnvg6j5ibbp"]
+
+[ext_resource type="Script" path="res://Scripts/Damageable.cs" id="1_og5ok"]
+[ext_resource type="Texture2D" uid="uid://c4nuvfpqfotxa" path="res://Sprites/pine.png" id="2_3mhjw"]
+[ext_resource type="Resource" uid="uid://dxivbrveskqeb" path="res://Items/pine_log.tres" id="2_snr05"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tr6hr"]
+size = Vector2(20, 42)
+
+[node name="Tree" type="StaticBody2D"]
+collision_layer = 128
+collision_mask = 0
+input_pickable = true
+script = ExtResource("1_og5ok")
+item = ExtResource("2_snr05")
+amount = 5
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_3mhjw")
+offset = Vector2(0, -40)
+
+[node name="ClickDetector" type="CollisionShape2D" parent="."]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_tr6hr")
+
+[connection signal="input_event" from="." to="." method="OnTreeInputEvent"]

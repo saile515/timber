@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://pjrsl6iv7s7u"]
+
+[ext_resource type="Script" path="res://Scripts/ToolResource.cs" id="1_7klit"]
+[ext_resource type="Texture2D" uid="uid://b2h365sqjjyv2" path="res://Sprites/basic_axe.png" id="2_hewbg"]
+
+[resource]
+script = ExtResource("1_7klit")
+Type = 0
+Damage = 10
+Sprite = ExtResource("2_hewbg")
+Name = "Basic Axe"
+StackSize = 1
