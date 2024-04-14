@@ -43,7 +43,6 @@ public partial class Damageable : StaticBody2D
                 && tool.Type == Tool
             )
             {
-                GD.Print(Hp);
                 Hp -= tool.Damage;
                 if (Hp <= 0)
                 {
