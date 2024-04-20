@@ -41,14 +41,14 @@ public partial class ForrestGenerator : Node2D
         {
             for (float y = 0; y <= Size.Y - step + 1; y += step)
             {
-                float world_x =
+                float worldX =
                     (x + (float)random.NextDouble() * (step - 2) + 1 - Size.X / 2) * 16
                     + Position.X;
-                float world_y =
+                float worldY =
                     (y + (float)random.NextDouble() * (step - 2) + 1 - Size.Y / 2) * 16
                     + Position.Y;
 
-                Vector2I tileMapPosition = TileMap.LocalToMap(new Vector2(world_x, world_y));
+                Vector2I tileMapPosition = TileMap.LocalToMap(new Vector2(worldX, worldY));
                 TileMap.SetCell(1, tileMapPosition, 0, StumpCoordinates);
                 StaticBody2D tree = _treeScene.Instantiate() as StaticBody2D;
                 tree.Position = TileMap.MapToLocal(tileMapPosition) - Position - new Vector2(0, 8);

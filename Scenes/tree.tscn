@@ -17,7 +17,7 @@ amount = 5
 
 [node name="Sprite" type="Sprite2D" parent="."]
 texture = ExtResource("2_3mhjw")
-offset = Vector2(0, -40)
+offset = Vector2(0, -43)
 
 [node name="ClickDetector" type="CollisionShape2D" parent="."]
 position = Vector2(0, -3)
